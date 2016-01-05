@@ -1,0 +1,9 @@
+<h1>Wikis</h1>
+<h3><%= link_to "Create Wiki", new_wiki_path %> </h3>
+<% @wikis.each do |wiki| %>
+	<div>
+		<%= link_to wiki.title, wiki_path(wiki) %> |
+		<%= link_to "Edit", edit_wiki_path(wiki) %> |
+		<%= link_to "Delete", wiki, method: :delete %>
+	</div>
+<% end %>
