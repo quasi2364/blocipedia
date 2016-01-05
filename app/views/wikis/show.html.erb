@@ -1,4 +1,4 @@
-<h1><%= @wiki.title %></h1> </br>
+<h1><%= @wiki.title %></h1><p> Created by: <%= @wiki.user.email %></p</br>
 <p><%= @wiki.body %></p>
 <%= link_to "Edit", edit_wiki_path(@wiki) %> |
 <%= link_to "Delete", @wiki, method: :delete %>
