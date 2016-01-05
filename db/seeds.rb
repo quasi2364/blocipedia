@@ -2,7 +2,7 @@ include RandomData
 
 15.times do
 	user = User.create!(
-		email: RandomData.random_email,
+		email: Faker::Internet.free_email,
 		password: "password"
 	)
 end
@@ -10,12 +10,17 @@ users = User.all
 
 15.times do
 	wiki = Wiki.create!(
-		title: RandomData.random_sentence,
-		body: RandomData.random_paragraph,
+		title: Faker::Lorem.sentence,
+		body: Faker::Lorem.paragraph(10),
 		user: users.sample
 	)
 end
 wikis = Wiki.all
+
+user = User.create!(
+	email: "dlevin64@gmail.com",
+	password: "password"
+)
 
 puts "Seed finished"
 puts "#{User.count} users created"
