@@ -1,0 +1,15 @@
+<h1>Create a new Wiki</h1>
+<%= form_for @wiki do |f| %>
+	<div>
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</div>
+	<div>
+		<%= f.label :body %>
+		<%= f.text_area :body, rows: 8 %>
+	</div>
+	<div>
+		<%= f.submit "Create Wiki" %>
+	</div>
+<% end %>
+</br><%= link_to "Back", :back %>

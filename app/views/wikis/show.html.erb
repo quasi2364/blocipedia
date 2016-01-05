@@ -1,0 +1,7 @@
+<h1><%= @wiki.title %></h1> </br>
+<p><%= @wiki.body %></p>
+<%= link_to "Edit", edit_wiki_path(@wiki) %> |
+<%= link_to "Delete", @wiki, method: :delete %>
+</br>
+</br><%= link_to "Back", :back %>
+
