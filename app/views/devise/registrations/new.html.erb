@@ -16,9 +16,14 @@
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
-  <div class="field">
+  <div>
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Select Plan" %>
+    <%= f.select(:role, options_for_select([['Free', 'standard'], ['Premium - $10.00/month', 'premium']]), { include_blank: true }) %>
   </div>
 
   <div class="actions">
