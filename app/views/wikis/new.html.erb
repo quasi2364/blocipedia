@@ -8,6 +8,14 @@
 		<%= f.label :body %>
 		<%= f.text_area :body, rows: 8 %>
 	</div>
+
+	<% if current_user.admin? || current_user.premium? %>
+		<div>
+			<%= f.label :private %>
+			<%= f.check_box :private %> Private wiki
+		</div>
+	<% end %>
+
 	<div>
 		<%= f.submit "Create Wiki" %>
 	</div>
