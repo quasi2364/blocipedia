@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 
  group :production do
-   #gem 'pg'
+   gem 'pg'
    gem 'rails_12factor'
  end
 
@@ -35,5 +35,6 @@ gem 'figaro', '1.0'
 gem 'devise'
 gem 'pundit'
 gem 'faker'
+gem 'stripe'
 
 

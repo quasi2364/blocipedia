@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   resources :wikis
+  resources :charges, only: [:new, :create]
 
-  devise_for :users
+  devise_scope :user do
+    put '/downgrade' => 'users/registrations#downgrade', as: :downgrade
+  end
+
+  devise_for :users, controllers: { registrations: "users/registrations" }
   root to: 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
