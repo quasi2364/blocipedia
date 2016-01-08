@@ -23,7 +23,7 @@ class ChargesController < ApplicationController
 			currency: 'usd'
 		)
 
-		flash[:notice] = "Thanks for your purchase, you now have access to create private topics"
+		flash[:notice] = "Thanks for your purchase, you now have access to create and view private topics!"
 		redirect_to wikis_path
 
 		if charge["paid"] == true then current_user.update_attribute(:role, "premium") end
