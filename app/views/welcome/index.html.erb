@@ -1,28 +1,11 @@
-<br>
-<div class='jumbotron'>
-	<h1>Blocipedia</h1>
-	<p>Blocipedia is a resource for creating wikis</p>
-		<div class='row'>
-			<div class='col-md-2'>
-				<p><%= link_to "Sign Up", '#', class: 'btn btn-primary'%></p>
-			</div>
-			 <div class='col-md-2'>
-			 		<%= link_to "Sign In", '#', class: 'btn btn-default' %>
-			 </div>
-		</div>
-</div>
+    <div class="container">
 
-<div class='row'>
-	<div class='col-md-4'>
-		<h2>Solves world hunger</h2>
-		<p>Blocipedia will deliver food and water to those in need.</p>
-	</div>
-	<div class='col-md-4'>
-		<h2>Eliminates poverty</h2>
-		<p>Blocidepia will deliver money and education to those in need.</p>
-	</div>
-	<div class='col-md-4'>
-		<h2>Makes you better looking</h2>
-		<p>Blocipedia will make you better looking.</p>
-	</div>
-</div>
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Blocipedia</h1>
+        <p>Welcome to Blocipedia. The world's first and greatest way to create private wikis, share wikis, and colloborate.</p>
+          <%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+        </p>
+      </div>
+    </div> <!-- /container -->
+

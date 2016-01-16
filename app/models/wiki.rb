@@ -1,6 +1,8 @@
 class Wiki < ActiveRecord::Base
   #Associations
   belongs_to :user
+  has_many :collaborators
+  accepts_nested_attributes_for :collaborators
 
   #Validations
   validates :title, presence: true
