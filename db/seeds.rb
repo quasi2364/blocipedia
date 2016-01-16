@@ -17,6 +17,14 @@ users = User.all
 end
 wikis = Wiki.all
 
+100.times do
+	collab = Collaborator.create!(
+		wiki: wikis.sample,
+		user: users.sample
+	)
+end
+collabs = Collaborator.all
+
 user = User.create!(
 	email: "dlevin64@gmail.com",
 	password: "password"
@@ -25,3 +33,4 @@ user = User.create!(
 puts "Seed finished"
 puts "#{User.count} users created"
 puts "#{Wiki.count} wikis created"
+puts "#{Collaborator.count} Collaborators created"

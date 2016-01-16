@@ -16,21 +16,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
-.user-info {
-	margin-top: 9px;
+body {
+  padding-top: 70px;
+  padding-right: 70px;
+  padding-left: 70px;
 }
 
-.nav {
-	margin-top: 5px;
+.light-border {
+	border: 1px;
+	border-color: #c0c0c0;
 }
-
-.top_buttons {
-	padding-top: 22px;
-}
-
-.gravatar {
-	margin-bottom: 5px;
-	margin-right: 5px;
-}
-
