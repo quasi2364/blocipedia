@@ -1,11 +1,98 @@
-    <div class="container">
+<div class="container">
+	
+  <div class="jumbotron">
+  	<div class="row", id="jumbo-content">
+  		<div class="col-md-6">
+  			<h1>Blocipedia</h1>
+	   		 <p>Welcome to Blocipedia. The world's first and greatest way to create private wikis, share wikis, and colloborate with friends and collegues.</p></br>
+	      <%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-primary btn-lg btn-blue", id: "signup-btn" %>
+	      <%= link_to "Learn More", "", class: "btn btn-primary btn-lg btn-white", id: "signup-btn" %>
+  		</div>
+	    <div class="col-md-6">
+	    	<%= image_tag "wikis-index.jpg", id: "comp-image" %>
+	    </div>
+  	</div>
+  </div>
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Blocipedia</h1>
-        <p>Welcome to Blocipedia. The world's first and greatest way to create private wikis, share wikis, and colloborate.</p>
-          <%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-        </p>
-      </div>
-    </div> <!-- /container -->
+	<!-- Pricing Table Section -->
+  <div class="row grey-strip">
+  	
+  	
+		<section id="pricing-table">
+		    <div class="container">
+		    	<div class="row">
+  					<div class="col-md-6">
+  						<div id="pricing-text">
+  							<h2>Pricing Plans</h2>
+  							<p>Pricing text details here</p>
+  							</br>
+  						</div>
+						</div>
+					</div>
 
+		        <div class="row">
+		            <div class="pricing">
+		                <div class="col-md-4 col-sm-12 col-xs-12">
+		                    <div class="pricing-table">
+		                        <div class="pricing-header">
+		                            <p class="pricing-title">Free Plan</p>
+		                            <p class="pricing-rate"><sup>$</sup> 0 <span>/Mo.</span></p>
+		                            <a href="#" class="btn btn-custom">And Get Free Month</a>
+		                        </div>
+
+		                        <div class="pricing-list">
+		                            <ul>
+		                                <li><i class="fa fa-envelope"></i>1,000 messages</li>
+		                                <li><i class="fa fa-signal"></i><span>limited</span> data</li>
+		                                <li><i class="fa fa-user"></i><span>limited</span> users</li>
+		                                <li><i class="fa fa-smile-o"></i>first 10 day free</li>
+		                            </ul>
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="col-md-4 col-sm-12 col-xs-12">
+		                    <div class="pricing-table">
+		                        <div class="pricing-header">
+		                            <p class="pricing-title">Business Plan</p>
+		                            <p class="pricing-rate"><sup>$</sup> 20 <span>/Mo.</span></p>
+		                            <a href="#" class="btn btn-custom">And Get Free Month</a>
+		                        </div>
+
+		                        <div class="pricing-list">
+		                            <ul>
+		                                <li><i class="fa fa-envelope"></i>10,000 messages</li>
+		                                <li><i class="fa fa-signal"></i><span>unlimited</span> data</li>
+		                                <li><i class="fa fa-user"></i><span>unlimited</span> users</li>
+		                                <li><i class="fa fa-smile-o"></i>first 10 day free</li>
+		                            </ul>
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="col-md-4 col-sm-12 col-xs-12">
+		                    <div class="pricing-table">
+		                        <div class="pricing-header">
+		                            <p class="pricing-title">Extended Plan</p>
+		                            <p class="pricing-rate"><sup>$</sup> 80 <span>/Mo.</span></p>
+		                            <a href="#" class="btn btn-custom">And Get Free Month</a>
+		                        </div>
+
+		                        <div class="pricing-list">
+		                            <ul>
+		                                <li><i class="fa fa-envelope"></i>10,0000 messages</li>
+		                                <li><i class="fa fa-signal"></i><span>unlimited</span> data</li>
+		                                <li><i class="fa fa-user"></i><span>unlimited</span> users</li>
+		                                <li><i class="fa fa-smile-o"></i>first 10 day free</li>
+		                            </ul>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</section>
+  </div>
+
+
+</div>	

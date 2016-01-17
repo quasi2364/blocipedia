@@ -2,7 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.light-border {
-	border: 1px;
-	border-color: #c0c0c0;
+#wiki-body {
+	padding: 15px;
+}
+
+#right-column {
+	padding: 15px;
+}
+
+#btn-new-wiki {
+	margin-right: 30px;
+	margin-top: 10px;
 }
