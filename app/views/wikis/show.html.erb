@@ -3,7 +3,9 @@
 	<div class="col-md-9">
 		<div id="wiki-body", class="light-border">
 			<h1><%= @wiki.title %></h1><p> Created by: <%= @wiki.user.email %></p</br>
-			<p><%= markdown(@wiki.body) %></p>
+			<div id="epiceditor">
+				<p><%= markdown(@wiki.body) %></p>
+			</div>
 			<%= link_to "Edit", edit_wiki_path(@wiki), class: "btn btn-default btn-white btn-xs" %>
 			<%= link_to "Delete", @wiki, method: :delete, class: "btn btn-danger btn-xs", data: {confirm: "Are you sure you want to delete this Wiki?"} %>
 			</br>
@@ -39,6 +41,9 @@
 		</div>
 	</div>
 </div>
+
+<script src="/epiceditor/js/epiceditor.min.js"></script>
+
 
 
 
