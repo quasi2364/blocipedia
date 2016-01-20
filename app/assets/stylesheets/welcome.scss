@@ -61,7 +61,7 @@ p.pricing-text {
 }
 #pricing-table .pricing .pricing-table .pricing-header {
   position: relative;
-  background: white;
+  background: #f3f9fc;
   padding: 22px 22px;
   text-align: center;
   border-top-right-radius: 4px;
@@ -71,12 +71,12 @@ p.pricing-text {
 	color: #4199e1;
 }
 #pricing-table .pricing .pricing-table .pricing-header .pricing-title {
-  color: #4199e1;
+  color: black;
 
   letter-spacing: 2px;
   font-size: 24px;
   text-align: center;
-  font-weight: 700;
+
 }
 #pricing-table .pricing .pricing-table .pricing-header .pricing-rate {
   font-size: 70px;
