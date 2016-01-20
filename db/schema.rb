@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160112034227) do
+ActiveRecord::Schema.define(version: 20160119031432) do
 
   create_table "collaborators", force: :cascade do |t|
     t.integer  "user_id"
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(version: 20160112034227) do
 
   add_index "collaborators", ["user_id"], name: "index_collaborators_on_user_id"
   add_index "collaborators", ["wiki_id"], name: "index_collaborators_on_wiki_id"
+
+  create_table "mercury_images", force: :cascade do |t|
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
