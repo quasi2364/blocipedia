@@ -1,10 +1,12 @@
 include RandomData
 
 15.times do
-	user = User.create!(
+	user = User.new(
 		email: Faker::Internet.free_email,
 		password: "password"
 	)
+	user.skip_confirmation!
+	user.save!
 end
 users = User.all
 
