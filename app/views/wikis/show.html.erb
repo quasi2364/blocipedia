@@ -14,8 +14,8 @@
 	<div class="col-md-3">
 		<!-- Show list of wiki collaborators -->
 		<div id="right-column", class="light-border">
+			<h3>Collaborators</h3></br>
 			<% if current_user.admin? or current_user.premium? %>
-				<h3>Collaborators</h3></br>
 				<%= render 'collaborators/form', wiki: @wiki, collaborator: @collaborator %>
 				</br></br>
 				<table class="table">
