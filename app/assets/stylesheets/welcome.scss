@@ -2,14 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 /*Font Loded*/
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 
 .jumbotron {
 	min-height:  600px;
 	background-color: white;
-	background-image: url("jumbo-background.jpg");
+	background-image: image_url("jumbo-background.jpg");
 }
 
 #jumbo-content {
